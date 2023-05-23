@@ -1,12 +1,14 @@
 <?php
 // definizione dell'interfaccia 
-interface Vehicle
+interface Vehicle extends ferrari, fiat, tesla
 {
     // definizione dei metodi
     public function start();
     public function accelerate();
     public function stop();
     public function fuelConsumption();
+
+    $color = 'red';
 }
 
 abstract class Car implements Vehicle
@@ -33,4 +35,16 @@ abstract class Car implements Vehicle
     {
         // corpo del Metodo
     }
+}
+
+class ferrari
+{
+}
+
+class tesla
+{
+}
+
+class fiat
+{
 }
